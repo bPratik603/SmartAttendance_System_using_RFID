@@ -1,0 +1,16 @@
+SMAP
+Admin_005fsend_005femail_jsp.java
+JSP
+*S JSP
+*F
++ 0 Admin_send_email.jsp
+Admin_send_email.jsp
+*L
+5,108:47
+113,12:156
+124,2:168
+126,2:170,3
+128,5:176
+133,7:182
+139,9:189
+*E

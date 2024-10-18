@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Student" language="groovy" pageWidth="1429" pageHeight="842" columnWidth="1389" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="45280d8f-d763-4fcb-8ca1-18487c30370f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="580"/>
+	<property name="ireport.y" value="0"/>
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     student_signup.`Student_Signup_id` AS student_signup_Student_Signup_id,
+     student_signup.`Name` AS student_signup_Name,
+     student_signup.`Password` AS student_signup_Password,
+     student_signup.`Address` AS student_signup_Address,
+     student_signup.`Student_Contact_Number` AS student_signup_Student_Contact_Number,
+     student_signup.`Parants_Contact_Number` AS student_signup_Parants_Contact_Number,
+     student_signup.`DOB` AS student_signup_DOB,
+     student_signup.`Gender` AS student_signup_Gender,
+     student_signup.`Student_Email_id` AS student_signup_Student_Email_id,
+     student_signup.`Parants_Email_id` AS student_signup_Parants_Email_id,
+     student_signup.`Blood_Group` AS student_signup_Blood_Group,
+     student_signup.`Branch` AS student_signup_Branch,
+     student_signup.`Year` AS student_signup_Year,
+     student_signup.`Division` AS student_signup_Division
+FROM
+     `student_signup` student_signup]]>
+	</queryString>
+	<field name="student_signup_Student_Signup_id" class="java.lang.Integer"/>
+	<field name="student_signup_Name" class="java.lang.String"/>
+	<field name="student_signup_Password" class="java.lang.String"/>
+	<field name="student_signup_Address" class="java.lang.String"/>
+	<field name="student_signup_Student_Contact_Number" class="java.lang.Long"/>
+	<field name="student_signup_Parants_Contact_Number" class="java.lang.Long"/>
+	<field name="student_signup_DOB" class="java.sql.Date"/>
+	<field name="student_signup_Gender" class="java.lang.String"/>
+	<field name="student_signup_Student_Email_id" class="java.lang.String"/>
+	<field name="student_signup_Parants_Email_id" class="java.lang.String"/>
+	<field name="student_signup_Blood_Group" class="java.lang.String"/>
+	<field name="student_signup_Branch" class="java.lang.String"/>
+	<field name="student_signup_Year" class="java.lang.String"/>
+	<field name="student_signup_Division" class="java.lang.String"/>
+	<group name="student_signup_Student_Signup_id">
+		<groupExpression><![CDATA[$F{student_signup_Student_Signup_id}]]></groupExpression>
+		<groupHeader>
+			<band height="40">
+				<textField>
+					<reportElement style="Detail" x="5" y="0" width="163" height="15" uuid="a0e1b170-6798-4bc9-9892-f201ef65fa1b"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Name}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="168" y="0" width="243" height="15" uuid="d6c3bd41-5979-4c51-8d01-df3fb87524a6"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Address}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="413" y="1" width="105" height="15" uuid="5f091ac8-d0af-4062-886a-448d70333a43"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Student_Contact_Number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="518" y="1" width="104" height="15" uuid="01843fbc-0995-443f-bfb2-eaf5552cdd83"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Parants_Contact_Number}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="622" y="1" width="55" height="15" uuid="4e6ddc15-bef1-4289-a591-8364ffa8a349"/>
+					<textFieldExpression><![CDATA[$F{student_signup_DOB}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="697" y="1" width="57" height="15" uuid="fb47e387-1ff3-48f4-8bf6-717573f589dd"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Gender}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="754" y="0" width="173" height="15" uuid="90fdf066-62f2-40b9-954a-a5b51127e0b4"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Student_Email_id}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="927" y="1" width="180" height="15" uuid="c4813734-424b-4b7a-8a2b-a3708a0344e7"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Parants_Email_id}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="1118" y="1" width="31" height="15" uuid="22d39ee8-0509-4336-8382-e3f4c3125ddf"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Blood_Group}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="1159" y="0" width="111" height="15" uuid="8659f5e0-9b88-486d-9789-2636b031752d"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Branch}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="1270" y="0" width="70" height="15" uuid="f3fb27cd-ec3d-41b6-809a-551c2f6906e0"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Year}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement style="Detail" x="1352" y="1" width="42" height="15" uuid="09165cf2-aa2a-40aa-9393-130ab7d9bba3"/>
+					<textFieldExpression><![CDATA[$F{student_signup_Division}]]></textFieldExpression>
+				</textField>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="18"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<image>
+				<reportElement x="1094" y="6" width="300" height="64" uuid="e1bbd26b-ecdc-4d94-99dd-073748c0a0b2"/>
+				<imageExpression><![CDATA["leaf_banner_red.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement style="Title" x="0" y="13" width="263" height="33" uuid="cb3ec4f8-3ef5-4de6-a318-bb6c27998e19"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Student]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="36" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1" uuid="d2c4e679-1548-4996-a027-af3099e8e0f8"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement style="Column header" x="0" y="19" width="168" height="15" uuid="feb62ab2-07cb-4519-b1f5-52555dd5960e"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="168" y="21" width="243" height="15" uuid="b018144e-7d59-4530-b064-2150c74971dc"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="411" y="20" width="107" height="15" uuid="2a8c1dc2-5ca3-4c87-a822-78b4e8a95b11"/>
+				<text><![CDATA[Student_Conttact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="518" y="20" width="104" height="15" uuid="d7b337fd-b6d6-41ff-a874-a5d5e290bf5e"/>
+				<text><![CDATA[Parants_Contact]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="632" y="20" width="55" height="15" uuid="38f29e5b-96d1-40e0-a050-aade5c72d9e5"/>
+				<text><![CDATA[DOB]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="687" y="19" width="57" height="15" uuid="c983797a-0718-4719-81e4-99cd2a2744cf"/>
+				<text><![CDATA[Gender]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="754" y="20" width="173" height="15" uuid="94cde04d-9643-47d2-ac77-5f537e9c8967"/>
+				<text><![CDATA[Student_Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="927" y="19" width="180" height="15" uuid="75790012-c86b-4de8-b97a-1c269dd0a5de"/>
+				<text><![CDATA[Parants_Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="1107" y="19" width="42" height="15" uuid="191a8575-fdc1-484c-9ede-ea915658e421"/>
+				<text><![CDATA[Blood Group]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="1159" y="19" width="111" height="15" uuid="6ec9e820-3191-4201-addf-a47719ef0633"/>
+				<text><![CDATA[Branch]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="1270" y="21" width="70" height="15" uuid="0b8ceb94-0e04-4aba-928b-8f10b91f26d3"/>
+				<text><![CDATA[Year]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="1340" y="21" width="54" height="15" uuid="9d029bbf-6588-441a-9f62-144b5f2a240b"/>
+				<text><![CDATA[Division]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="26" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="15" width="1394" height="1" uuid="0dcb5846-ee68-471e-8804-9602a95f217c"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement style="SubTitle" x="-16" y="-24" width="506" height="24" forecolor="#CC0000" uuid="c9d29dd1-05c1-441b-8943-2386962fcde3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{student_signup_Student_Signup_id}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<line>
+				<reportElement positionType="FixRelativeToBottom" x="0" y="3" width="555" height="1" uuid="87923862-c86d-4087-8b56-c813f0cafbb9"/>
+				<graphicElement>
+					<pen lineWidth="0.5" lineColor="#999999"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField>
+				<reportElement style="Column header" x="433" y="0" width="80" height="20" uuid="e4780fbb-19d4-4f64-abd3-62f0f0f9afc0"/>
+				<textElement textAlignment="Right">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement style="Column header" x="513" y="0" width="40" height="20" uuid="c4079f16-5004-4fc1-99cf-8e0ce7355081"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="0" y="0" width="197" height="20" uuid="f58602d3-1419-414e-b853-f0c09aae275d"/>
+				<textElement>
+					<font size="10" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
